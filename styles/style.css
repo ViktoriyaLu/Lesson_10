@@ -1,104 +1,125 @@
-.flowers__title {
-    color:rgb(237, 14, 148);
-    display: flex;
-    justify-content: center;
+* {
+  box-sizing: border-box;
+}
+ 
+/* html, */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #7EC855;
+  font-family: 'Roboto', sans-serif;
+}
+.content {
+  width: 750px;
+
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  height: 20px;
+ justify-content: center;
+ 
+  padding: 20px 30px;
+  color: white;
+font-weight: bold;
+  font-weight: 400;
+}
+.product {
+  padding: 20px 30px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around
+   
+}
+/* .product__img {
+ height: 100px;
+} */
+
+.product__description {
+  display: flex;
+  flex-direction: column;
 }
 
-.flowers__container {
-    max-width: 650px;
-    margin: 0 auto;
+.product__quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.product__quantity input {
+  /* -webkit-appearance: none; */
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+ 
+button:focus,
+input:focus {
+  outline:0;
+}
+.product__price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+.total {
+  display: flex;
+  justify-content: center;
+}
+.total__discount {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 20%;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+.total__sum {
+  display: flex;
+  margin-top: 20px;
+}
+.total__bigSum {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 6px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  color: black;
   }
-  
-  .flowers-slider__item {
-    flex: 0 0 100%;
-    max-width: 100%;
-    counter-increment: slide;
-    height: 630px;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .flowers-slider__item:nth-child(1) {
-    background-image: url(../../assets/images/flowers-img1.jpg);
-  }
-  
-  .flowers-slider__item:nth-child(2) {
-    background-image: url(../../assets/images/flowers-img2.jpeg);
-  }
-  
-  .flowers-slider__item:nth-child(3) {
-    background-image: url(../../assets/images/flowers-img3.jpeg);
-  }
-  
-  .flowers-slider__item:nth-child(4) {
-    background-image: url(../../assets/images/flowers-img4.jpeg);
-  }
-  
-  .flowers-slider__item:nth-child(5) {
-    background-image: url(../../assets/images/flowers-img5.jpeg);
-  }
-  
-  .flowers-slider__item:nth-child(6) {
-    background-image: url(../../assets/images/flowers-img6.jpeg);
-  }
-  
-   
-  
-  .flowers-slider {
-    position: relative;
-  }
-  
-  .flowers-slider__wrapper {
-    overflow: hidden;
-  }
-  
-  .flowers-slider__items {
-    display: flex;
-    transition: transform 0.5s ease;
-    will-change: transform;
-  }
-  
-  .flowers-slider__transition-none {
-    transition: none;
-  }
-  
-  .flowers-slider__item {
-    flex: 0 0 100%;
-    max-width: 100%;
-    user-select: none;
-    will-change: transform;
-  }
-  
-  .flowers-slider__btn {
-    position: absolute;
-    top: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color:rgb(237, 14, 148);
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 50px;
-    color: white;
-    text-align: center; 
-    /* background: rgba(0, 0, 0, 0.2); */
-    border: none;
-    /* transform: translateY(-50%);
-    cursor: pointer; */
-  }
-  
-  .flowers-slider__btn_hide {
-    display: none;
-  }
-  
-  .flowers-slider__btn_prev {
-    left: 0;
-  }
-  
-  .flowers-slider__btn_next {
-    right: 0;
-  }
-  

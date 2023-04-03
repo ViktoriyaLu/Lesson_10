@@ -1,43 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
+    <title>Basket</title>
     <link rel="stylesheet" href="styles/style.css" />
-	<link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
 </head>
+
 <body>
-    
-        <div class="container">
-                <h2 id="n5" class="flowers__title">FLOWERS</h2>
+    <h1 class="title">
+        КОРЗИНА
+    </h1>
+    <div class="content">
 
-            <div class="flowers__container">
-                <div class="flowers-slider" data-slider="flowers-slider" data-loop="false" data-autoplay="false">
-                    <div class="flowers-slider__wrapper">
-                        <div class="flowers-slider__items">
-                            <div class="flowers-slider__item">
-                            </div>
-                            <div class="flowers-slider__item">
-                            </div>
-                            <div class="flowers-slider__item">
-                            </div>
-                            <div class="flowers-slider__item">
-                            </div>
-                            <div class="flowers-slider__item">
-                            </div>
-                            <div class="flowers-slider__item">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="flowers-slider__btn flowers-slider__btn_prev">Previous</button>
-                    <button class="flowers-slider__btn flowers-slider__btn_next">Next</button>
-                </div>
+        <!-- Товар #1 -->
+        <!-- <div class="product">
+
+            <div class="product__img">
+                <img src="/assets/images/flowers-img1 .jpg" alt="Photo" />
             </div>
-        </div>
+            <div class="product__name">ТЮЛЬПАН</div>
+            <div class="product__description">
+               <p>Цвет:розовый</p>
+                <p>Голландия</p>
+            </div>
 
-    
+            <div class="product__quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="minus.svg" alt="" />
+                </button>
+            </div>
+
+            <div class="product__price">$100</div>
+        </div> -->
+
+        <!-- Товар #2 -->
+        <!-- <div class="product">
+            <div class="product__img">
+                <img src="/assets/images/flowers-img2.jpg" alt="Photo" />
+            </div>
+            <div class="product__name">ТЮЛЬПАН</div>
+            <div class="product__description">
+                <p>Цвет: белый</p>
+                <p>Голландия</p>
+            </div>
+
+            <div class="product__quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="minus.svg" alt="" />
+                </button>
+            </div>
+
+            <div class="product__price">$110</div>
+        </div> -->
+
+        <!-- Товар #3 -->
+        <!-- <div class="product">
+            <div class="product__img">
+                <img src="/assets/images/flowers-img3.jpg" alt="" />
+            </div>
+            <div class="product__name">БУКЕТ</div>
+            <div class="product__description">
+                 <p>Цвет: Многоцветие</p>
+                <p>Россия</p>
+            </div>
+
+            <div class="product__quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="minus.svg" alt="" />
+                </button>
+            </div>
+
+            <div class="product__price">$3000</div>
+        </div> -->
+
+        <!-- Товар #4 -->
+        <!-- <div class="product">
+            <div class="product__img">
+                <img src="/assets/images/flowers-img4.jpg" alt="" />
+            </div>
+            <div class="product__name">БУКЕТ </div>
+            <div class="product__description">
+                 <p>Цвет: Корзина</p>
+                <p>Россия</p>
+            </div>
+
+            <div class="product__quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="minus.svg" alt="" />
+                </button>
+            </div>
+
+            <div class="product__price">$3500</div>
+        </div> -->
+
+    </div>
+    <div class="total">
+        <button class="total__discount" type="submit" id="discount">Использовать купон на 20%</button>
+        <div class="total__sum">
+            <p> Итого:</p>
+            <button class="total__bigSum"></button>
+        </div>
+    </div>
     <script src="./assets/scripts/index.js"></script>
 </body>
+
 </html>
