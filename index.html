@@ -17,14 +17,14 @@
     <div class="content">
 
         <!-- Товар #1 -->
-        <!-- <div class="product">
+        <div class="product">
 
             <div class="product__img">
                 <img src="/assets/images/flowers-img1 .jpg" alt="Photo" />
             </div>
             <div class="product__name">ТЮЛЬПАН</div>
             <div class="product__description">
-               <p>Цвет:розовый</p>
+                <p>Цвет:розовый</p>
                 <p>Голландия</p>
             </div>
 
@@ -38,11 +38,13 @@
                 </button>
             </div>
 
-            <div class="product__price">$100</div>
-        </div> -->
+            <div class="product__priceOne" id="product__priceOne">
+                <span class="js-price">100</span> руб.
+            </div>
+        </div>
 
         <!-- Товар #2 -->
-        <!-- <div class="product">
+        <div class="product">
             <div class="product__img">
                 <img src="/assets/images/flowers-img2.jpg" alt="Photo" />
             </div>
@@ -62,17 +64,19 @@
                 </button>
             </div>
 
-            <div class="product__price">$110</div>
-        </div> -->
+            <div class="product__priceTwo">
+                <span class="js-price">110</span> руб.
+            </div>
+        </div>
 
         <!-- Товар #3 -->
-        <!-- <div class="product">
+        <div class="product">
             <div class="product__img">
                 <img src="/assets/images/flowers-img3.jpg" alt="" />
             </div>
             <div class="product__name">БУКЕТ</div>
             <div class="product__description">
-                 <p>Цвет: Многоцветие</p>
+                <p>Цвет: Многоцветие</p>
                 <p>Россия</p>
             </div>
 
@@ -85,18 +89,19 @@
                     <img src="minus.svg" alt="" />
                 </button>
             </div>
-
-            <div class="product__price">$3000</div>
-        </div> -->
+            <div class="product__priceThree">
+                <span class="js-price">3000</span> руб.
+            </div>
+        </div>
 
         <!-- Товар #4 -->
-        <!-- <div class="product">
+        <div class="product">
             <div class="product__img">
                 <img src="/assets/images/flowers-img4.jpg" alt="" />
             </div>
             <div class="product__name">БУКЕТ </div>
             <div class="product__description">
-                 <p>Цвет: Корзина</p>
+                <p>Цвет: Корзина</p>
                 <p>Россия</p>
             </div>
 
@@ -109,16 +114,19 @@
                     <img src="minus.svg" alt="" />
                 </button>
             </div>
+            <div class="product__priceFour">
+                <span class="js-price">3500 </span> руб.
+            </div>
 
-            <div class="product__price">$3500</div>
-        </div> -->
+        </div>
+    </div>
 
     </div>
     <div class="total">
-        <button class="total__discount" type="submit" id="discount">Использовать купон на 20%</button>
+        <button class="total__discount" type="button" >Использовать купон на 20%</button>
         <div class="total__sum">
-            <p> Итого:</p>
-            <button class="total__bigSum"></button>
+            <p total__text> Итого:</p>
+            <p class="total__bigSum"></p>
         </div>
     </div>
     <script src="./assets/scripts/index.js"></script>
