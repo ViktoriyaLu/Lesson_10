@@ -8,30 +8,61 @@
 // 	priceOne.textContent = price * 0.8;
 // 	console.log(discount);
 // })
+//НАЧАЛО здесь 
 
+
+// Получаем все элементы с классом "js-price"
 const priceElements = document.querySelectorAll('.js-price');
-const priceOne = +priceElements[0].textContent;
-const priceTwo = +priceElements[1].textContent;
-const priceThree = +priceElements[2].textContent;
-const priceFour = +priceElements[3].textContent;
-console.log(priceFour);
 
-const bigSum = (priceOne + priceTwo + priceThree + priceFour);
+//До комментов Kота было так:
+
+// const priceOne = +priceElements[0].textContent;
+// const priceTwo = +priceElements[1].textContent;
+// const priceThree = +priceElements[2].textContent;
+// const priceFour = +priceElements[3].textContent;
+// const bigSum = (priceOne + priceTwo + priceThree + priceFour);
+
+// Инициализируем переменную для хранения общей суммы
+let bigSum = 0;
+// Вычисляем общую сумму, пройдя по каждому элементу
+for (let i = 0; i < priceElements.length; i++) {
+const price = +priceElements[i].textContent;
+bigSum += price;
+}
+//Выводим общую сумму на страницу
 document.querySelector('.total__bigSum').innerHTML = bigSum;
 
+//Получаем кнопку  со скидкой
 const discount = document.querySelector('.total__discount'); //кнопка 
+
+//Инициализируем переменную для коэффциента скидки
+const discountFactor = 0.8;
+
+//Добавляем обработчик события на кнопку со скидкой
 discount.addEventListener('click', () => { //анонимная функция
-	priceElements[0].textContent = priceOne * 0.8;
-	priceElements[1].textContent = priceTwo * 0.8;
-	priceElements[2].textContent = priceThree * 0.8;
-	priceElements[3].textContent = priceFour * 0.8;
-	const bigSumSale = 0.8 * (priceOne + priceTwo + priceThree + priceFour);
-	document.querySelector('.total__bigSum').innerHTML = bigSumSale;
+	//До комментов Kота было так:
+	// priceElements[0].textContent = priceOne * 0.8;
+	// priceElements[1].textContent = priceTwo * 0.8;
+	// priceElements[2].textContent = priceThree * 0.8;
+	// priceElements[3].textContent = priceFour * 0.8;
+	// const bigSumSale = 0.8 * (priceOne + priceTwo + priceThree + priceFour);
+	
+	// Применяем скидку к каждлму элементу
+	for (let i = 0; i < priceElements.length; i++) {
+		const price = +priceElements[i].textContent;
+		priceElements[i].textContent = price * discountFactor;
+		}
+		// Вычисляем новую общую сумму со скидкой
+		const bigSumSale = discountFactor * bigSum;
+
+		// Выводим новую общую сумму со скидкой на страницу
+		document.querySelector('.total__bigSum').innerHTML = bigSumSale;
+
+		// отключаем кнопку со скидкой
+		discount.setAttribute('disable', true);
+	});
 
 
-
-	discount.setAttribute('disable', true);
-});
 
 //Вариант с массивом ! Доделать позже!!!!
 
